@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="60dp"
+            android:id="@+id/sp_member"
+            android:layout_width="match_parent"
+
+            />
+
+        <EditText
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/sp_member"
+            android:layout_height="60dp"
+            android:id="@+id/et_receive"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:hint="Amount "
+            android:inputType="number"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:drawableLeft="@drawable/calender"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:text="Select date"
+            android:id="@+id/tv_selectDate"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/et_receive"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <!--<DatePicker
+            android:id="@+id/tv_date"
+            android:layout_below="@+id/tv_selectDate"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner" />-->
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_selectDate"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:id="@+id/bt_save"
+            android:layout_width="110dp"
+            android:text="save"
+            android:layout_marginBottom="10dp"
+            android:textColor="#004d40" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_selectDate"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:id="@+id/bt_cancel"
+            android:layout_width="110dp"
+            android:text="cancel"
+            android:layout_marginBottom="10dp"
+            android:textColor="#004d40" />
+    </RelativeLayout>
+
+</RelativeLayout>

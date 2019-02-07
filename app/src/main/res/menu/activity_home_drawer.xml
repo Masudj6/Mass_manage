@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_userProfile"
+            android:icon="@drawable/profile"
+            android:title="My profile" />
+        <item
+            android:id="@+id/nav_allUser"
+            android:icon="@drawable/alluser"
+            android:title="All user" />
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/shedule"
+            android:title="Market schedule" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/report"
+
+            android:title="Report" />
+
+        <item
+            android:id="@+id/nav_message"
+            android:icon="@drawable/message"
+            android:title="Message" />
+
+        <item
+            android:id="@+id/nab_tutorial"
+            android:icon="@drawable/tutorial"
+            android:title="Tutorial" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/question"
+            android:title="About" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

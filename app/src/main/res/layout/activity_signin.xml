@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activity.Signin">
+
+    <RelativeLayout
+        android:id="@+id/layoutOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+
+            android:id="@+id/title_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:textColor="#004d40"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutOne">
+
+        <EditText
+            android:gravity="center_vertical"
+            android:id="@+id/et_userName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/rectengularshape"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:drawablePadding="07dp"
+            android:drawableStart="@drawable/ic_phone_black_24dp"
+            android:hint="Phone number"
+            android:imeOptions="actionNext"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="phone"
+            android:textColor="#004d40"
+            android:textColorHighlight="#004d40"
+            android:textColorHint="#004d40"
+            android:textSize="12sp" />
+
+        <EditText
+            android:gravity="center_vertical"
+            android:id="@+id/userpass"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/et_userName"
+            android:background="@drawable/rectengularshape"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
+            android:hint="User passward"
+            android:drawablePadding="07dp"
+            android:imeOptions="actionDone"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="textPassword"
+            android:textColor="#004d40"
+            android:textColorHighlight="#004d40"
+            android:textColorHint="#004d40"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2">
+
+        <TextView
+            android:id="@+id/fogetPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Forget password"
+            android:textColor="#FAD50D"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/fogetPass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundedbutton"
+            android:text="Log in"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/or"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="or"
+            android:layout_below="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/or"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="1dp"
+                android:src="@drawable/fb"/>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="1dp"
+                android:src="@drawable/twitter"/>
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="1dp"
+                android:src="@drawable/googleplus"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/signUP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="First time here?Sign Up"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+</RelativeLayout>

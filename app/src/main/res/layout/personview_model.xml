@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_views"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:contentPadding="5dp">
+
+
+            <LinearLayout
+                android:weightSum="6.2"
+                android:layout_below="@+id/view"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/ivimage"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_account_circle_black_24dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:background="#BDBDBD"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+
+                <TextView
+
+                    android:gravity="center_vertical"
+                   android:layout_marginLeft="5dp"
+                    android:layout_weight="3"
+                    android:text="Mozibul Hoque"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/tvname"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                   />
+                <TextView
+                    android:background="#BDBDBD"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+                <TextView
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="1000 tk"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/tvcost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    />
+            </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
